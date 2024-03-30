@@ -5,7 +5,7 @@ const handler = async (event) => {
 
 // Parse the query params
   let mode = event.queryStringParameters["hub.mode"];
-  let token = revent.queryStringParameters["hub.verify_token"];
+  let token = event.queryStringParameters["hub.verify_token"];
   let challenge = event.queryStringParameters["hub.challenge"];
 
 let statusCode = 200;
