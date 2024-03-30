@@ -21,7 +21,7 @@ let statusCode = 200;
 
   return {
       statusCode,
-      body: JSON.stringify({ mode, token, challenge}),
+      body: challenge,
       // // more keys you can return:
       // headers: { "headerName": "headerValue", ... },
       // isBase64Encoded: true,
