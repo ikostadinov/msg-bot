@@ -1,0 +1,15 @@
+name: Check Space Weather (Daily)
+
+on:
+  schedule:
+    - cron: "0 0 * * *"  # every 24 hours at midnight UTC
+  workflow_dispatch: # allows manual trigger
+
+jobs:
+  check-storm:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Call Netlify Function
+        run: |
+          curl -X GET "https://6a0e0c41f91513932774d1bd--magnetic-storms.netlify.app/.netlify/functions/checkstorms"
