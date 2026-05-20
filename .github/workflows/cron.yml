@@ -12,4 +12,4 @@ jobs:
     steps:
       - name: Call Netlify Function
         run: |
-          curl -X GET "https://6a0e0c41f91513932774d1bd--magnetic-storms.netlify.app/.netlify/functions/checkstorms"
+          curl -X GET "https://6a0e12926cd6eba9487bcbe5--magnetic-storms.netlify.app/.netlify/functions/checkstorms"
